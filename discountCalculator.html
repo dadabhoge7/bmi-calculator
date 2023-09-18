@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=KoHo&family=Poppins&family=Roboto+Flex:opsz,wght@8..144,500&display=swap" rel="stylesheet">
+    <style>
+        .container{
+            background-color:white;
+            color: cadetblue;
+            width: 590px;
+            height: 320px;
+            display: inline-block;
+            position: relative;
+            border: 2px solid;
+            left: 350px;
+            top: 100px;
+        }
+        h2{
+            color:cadetblue;
+            text-transform: uppercase;
+            font-family: 'Roboto Flex', sans-serif;
+            }
+            .heading:hover{
+                color: blue;
+            }
+            input[type="number"]{
+                color: cadetblue;
+                text-decoration: solid;
+                font-size: medium;
+                width: 540px;
+            }
+            label, p{
+                color: cadetblue;
+                font-family: 'Roboto Flex', sans-serif;
+                
+            }
+            .heading{
+                text-align: center;
+            }
+            p, label, input{
+                margin: 0px 0px 20px 20px;
+            }
+            #submitButton{
+                color: wheat;
+                font-size: x-large;
+                background-color: green;
+                text-decoration: solid;
+                text-transform: capitalize;
+                text-align: center;
+                shape-outside: margin-box;
+                width: 550px;
+            }
+            #submitButton:hover{
+                background-color: burlywood;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Discount Calculator</h2>
+        <p>Enter the Bill amount and discount in percentage</p>
+        <label for="">Bill Amount</label>
+        <br>
+        <input type="number">
+        <br>
+        <label for="">Discount Percentage</label>
+        <br>
+        <input type="number"><br>
+        <input type="submit" value="Calculate" id="submitButton">
+        <br>
+        <p>Total Discount Amount</p>
+    </div>
+
+</body>
+</html>
